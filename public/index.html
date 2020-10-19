@@ -2,17 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Phone Authentication</title>
+  <title>Samsung Promo App</title>
+  <link rel="icon" href="2.jpg" type="image/gif" sizes="16x16">
+  <style type="text/css">
+    .imagesize{
+  width: 100%;
+  height: 600px;
+}
+  </style>
+
+  <!--viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--bootstrap links start-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--bootstrap links end-->
 
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 	<script>
 	  var config = {
-	    apiKey: "",
-	    authDomain: "",
-	    databaseURL: "",
-	    projectId: "",
-	    storageBucket: "",
-	    messagingSenderId: ""
+	    apiKey: "AIzaSyDg0db87tCqXYxtG0iKQrXusgy9LTeqaeU",
+	    authDomain: "samcogni124.firebaseapp.com",
+	    databaseURL: "https://samcogni124.firebaseio.com",
+	    projectId: "samcogni124",
+	    storageBucket: "samcogni124.appspot.com",
+	    messagingSenderId: "548947057181"
 	  };
 	  firebase.initializeApp(config);
 	</script>
@@ -23,24 +43,107 @@
 </head>
 <body>
     <div id="container">
-      <h3>Authentication Phone number</h3>
+      <h3 style="margin-top: 20px;">Samsung Promo App</h3>
       <div id="loading">Loading...</div>
       <div id="loaded" class="hidden">
         <div id="main">
-          <div id="user-info" style="text-align: center;"></div>
-              <div id="phone" style="text-align: center;"></div>
-              <h3>Your coupon will be sent to you shortly <br> 
-              to your registered mobile number</h3>
-           <h3>Thank you For your Purcahse</h3>
+          <div id="user-signed-in" class="hidden">
+            <div id="user-info" style="text-align: center;">
+              <div class="service">
+                <div class="text-center innertxt">
+                   <div id="phone"></div>
+                   <h1>Thank you...!</h1>
+                   <h5>your coupon will be sent shortly</h5>
+                </div>
+              </div>
+        <!--samsung mobile images row start-->
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <a href="#"><img src="1.jpg" class="imagesize"></a>
+                </div>
+
+
+
+                <div class="col-lg-8 col-sm-12 offerdata">
+                  <div class="scrollbar">
+                  <h3 style="text-align: center; margin-top: 10px;">Dussehra Festive Consumer Offer</h3>
+                  <h5>Offer period</h5>
+                  <p>Offer shall be valid from October 19, 2020 – October 31, 2020. Samsung reserves the right to extend or dissolve the offer period at its sole discretion.</p>
+
+                  <h5>Place & Outlet Coverage</h5>
+                  <p>Offer valid only in States of Andhra Pradesh & Telangana. <br>
+Offer not applicable on purchases made from Organized Trade and e-commerce websites or any other unauthorized seller.<br>
+Request customer to check the offer’s availability before purchasing the product. 
+</p>
+
+                  <h5>Product Coverage</h5>
+                  <p>Offer shall be applicable on all Samsung smartphones priced at or above Rs.15000.00 (“Products”).<br>
+Note 20 Ultra 5G | Note 20 | S20 Ultra | S20+ | S20 | Note10+ | Note10 | Galaxy S20 FE | Galaxy S10 Lite | Galaxy Note10 Lite | A71 | A51 | A31 | A21s (All variants of mentioned models)<br>
+
+Offer not valid on refurbished Products, Wearables and Tabs.
+</p>
+
+                  <h5>Eligibility of Participation </h5>
+                  <p>Offer valid for Indian Citizens who have attained the age of 18 years or above, except employees & family members of Samsung & its affiliates/associate/subsidiary companies & their dealers/distributors/retailers, suppliers, advertising agencies & event management companies.<br><br>
+Participant needs to purchase and activate the new Product from the Outlet during the Offer Period, failing which his or her participation shall stand forfeited.
+</p>
+
+                  <h5>Times Prime Subscription: </h5>
+                  <p>Quarterly Subscription offer from “Times Prime” </p>
+
+                  <h5>Steps to avail this Offer</h5>
+                  <p>1. Customer have to buy the Product in offer only form the Outlets where Offer is available. <br>
+2.  Customer should activate the purchased Product within three (03) days from the purchase date.<br>
+3.  Customer have to validate his/her mobile number in the link which he will be receiving via message post Product purchase and activation. <br>
+4.  Post validation, customer will get a Times Prime E-coupon code.<br>
+</p>
+
+                  <h5>How to avail this offer:</h5>
+                  <p>1. Signup / Register on Times Prime using your mobile number or Email ID. <br>
+2.  Post signup in Times Prime, you will be guided to main portal. <br>
+3.  Click on the tab “Pay” to proceed further. <br>
+4.  Pop up will come up to enter your E-Coupon. <br>
+5.  Enter the code and enjoy the benefits. <br>
+6.  All E-coupons ae valid till December 31, 2020 only. <br>
+</p>
+
+                  <h5>Times Prime Legal Disclaimer</h5>
+                  <p>•  This Offer is governed by the laws of India and any disputes arising out of or in connection with this Offer will be subject to the exclusive jurisdiction of the courts at Gurugram, Haryana.<br>
+• All terms and conditions related to Times Prime service shall be as per the Terms of Use available on Times Prime website. https://www.timesprime.com/ <br>
+• For any assistance or queries related to Times Prime service please email at support@timesprime.com
+</p>
+
+                  <h5>General:</h5>
+                  <p>•  These Offer(s) are provided by Samsung India Electronics Private Limited (“Samsung” or “Company”) or by other third-party partners as specifically mentioned in the concerned Offer on the Products.<br>
+• Samsung reserves the right to change/alter & modify the terms & conditions of these Offers at any given point at its sole discretion without giving any reason whatsoever.<br>
+• Samsung further reserves the right to amend/modify/withdraw/annul/extend the Offer at its sole discretion without any prior notice.<br>
+• In no event shall Samsung be liable for losses or any incidental or consequential damages arising out of or in connection with the Offer, its services or its Terms (however arising, including negligence). Samsung shall not be responsible for any product or service liability of any kind.<br>
+• In the event of any conflict or inconsistency regarding any instructions, rules and conditions on any advertising or promotional material relating to the Offer, these Terms and Conditions shall prevail over all such other instructions, rules and conditions.<br>
+• All the Products under the Offer(s) mentioned in this document shall be with a Standard Manufacturer’s warranty as detailed in the warranty cards for each of the respective products.<br>
+• EMI Offer(s) are provided solely at the issuer’s/ bank’s discretion, respectively. Samsung disclaims any and all claims in respect of the same. Under no circumstances shall Samsung and/or its affiliates and/or their directors, officers, agents or employees be held responsible for EMI Offer(s).<br>
+• Decision of Samsung in relation to the Offer and matter incidental thereto shall be final and binding. These terms and/or any and all disputes arising or related to the Offers mentioned herein shall be governed by the laws of India and the courts located at Gurugram, Haryana shall have the exclusive jurisdiction.<br>
+</p>
+
+                </div>
+                </div>
+              </div> 
+            </div>
+          <!--samsung mobile images row end-->
+             
               <div class="clearfix"></div>
             </div>
             <p>
               <button id="sign-out">Sign Out</button>
             </p>
           </div>
+
+          
+
           <div id="user-signed-out" class="hidden">
             <div id="firebaseui-spa">
-              <h3>Samsung OTP App</h3>
+              <h3>Please verify with your phone number</h3>
               <div id="firebaseui-container"></div>
             </div>
           </div>
