@@ -1,0 +1,69 @@
+
+body {
+  margin: 0;
+  line-height: 25px;
+}
+
+#container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+#user-info {
+  border: none;
+  clear: both;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+/*thank you container*/
+
+.service{
+  margin-bottom: 50px;
+  background-color: #fae1d2;
+  padding: 60px 0px;
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.scrollbar{
+   overflow: scroll;
+   height: 600px;
+   padding-left: 50px;
+   text-align: justify;
+   font-size: 12px;
+   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 767px){
+  .scrollbar{
+    padding-left: 10px;
+  }
+}
+
+.offerdata{
+  margin-top: 3px;
+}
+
+@media only screen and (max-width: 767px){
+  .offerdata{
+  margin-top: 50px;
+}
+}
+
+
+
