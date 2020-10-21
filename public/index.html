@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Samsung Promo App</title>
-  <link rel="icon" href="2.jpg" type="image/gif" sizes="16x16">
+  <title>Samsung Festive Offer</title>
+  <link rel="icon" href="images/2.jpg" type="image/gif" sizes="16x16">
   <style type="text/css">
-    .imagesize{
-  width: 100%;
-  height: 600px;
-}
+  .imagesize{
+    width: 100%;
+    height: 600px;
+  }
   </style>
 
   <!--viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--google fonts link-->
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 
   <!--bootstrap links start-->
 
@@ -27,12 +30,12 @@
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 	<script>
 	  var config = {
-	    apiKey: "AIzaSyDg0db87tCqXYxtG0iKQrXusgy9LTeqaeU",
-	    authDomain: "samcogni124.firebaseapp.com",
-	    databaseURL: "https://samcogni124.firebaseio.com",
-	    projectId: "samcogni124",
-	    storageBucket: "samcogni124.appspot.com",
-	    messagingSenderId: "548947057181"
+      		apiKey: "",
+      		authDomain: "",
+	    	databaseURL: "",
+	    	projectId: "",
+	    	storageBucket: "",
+	     	messagingSenderId: "",
 	  };
 	  firebase.initializeApp(config);
 	</script>
@@ -43,7 +46,6 @@
 </head>
 <body>
     <div id="container">
-      <h3 style="margin-top: 20px;">Samsung Promo App</h3>
       <div id="loading">Loading...</div>
       <div id="loaded" class="hidden">
         <div id="main">
@@ -61,7 +63,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-4 col-sm-12">
-                  <a href="#"><img src="1.jpg" class="imagesize"></a>
+                  <a href="#"><img src="/images/1.jpg" class="imagesize"></a>
                 </div>
 
 
@@ -75,7 +77,7 @@
                   <h5>Place & Outlet Coverage</h5>
                   <p>Offer valid only in States of Andhra Pradesh & Telangana. <br>
 Offer not applicable on purchases made from Organized Trade and e-commerce websites or any other unauthorized seller.<br>
-Request customer to check the offer’s availability before purchasing the product. 
+Request customer to check the offer’s availability before purchasing the product.
 </p>
 
                   <h5>Product Coverage</h5>
@@ -128,10 +130,10 @@ Participant needs to purchase and activate the new Product from the Outlet durin
 
                 </div>
                 </div>
-              </div> 
+              </div>
             </div>
           <!--samsung mobile images row end-->
-             
+
               <div class="clearfix"></div>
             </div>
             <p>
@@ -139,17 +141,33 @@ Participant needs to purchase and activate the new Product from the Outlet durin
             </p>
           </div>
 
-          
 
-          <div id="user-signed-out" class="hidden">
-            <div id="firebaseui-spa">
-              <h3>Please verify with your phone number</h3>
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <a href="#"><img src="/images/3.jpg" class="imageland"></a>
+          <a href="#"><img src="/images/4.jpg" class="imagelandmobile"></a>
+        </div>
+
+        </div>
+    </div>
+          <div class="service">
+            <div class="text-center innertxt">
+              <div id="user-signed-out" class="hidden">
+                <div id="firebaseui-spa">
+
+                <h4 style="margin-top: 10px;">Welcome to Samsung Samtphones Festive Offer Redemption Page <br>Andhra Pradesh & Telangana</h4>
+                <h5 style="margin-top: 20px;">Please verify with your phone number</h5>
+            </div>
+          </div>
               <div id="firebaseui-container"></div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
     <script src="app.js"></script>
+
 </body>
 </html>
