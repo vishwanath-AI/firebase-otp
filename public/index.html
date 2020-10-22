@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Samsung Festive Offer</title>
-  <link rel="icon" href="images/2.jpg" type="image/gif" sizes="16x16">
+  <link rel="icon" href="/images/2.jpg" type="image/gif" sizes="16x16">
   <style type="text/css">
   .imagesize{
     width: 100%;
@@ -13,6 +13,10 @@
 
   <!--viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--favicon link-->
+
+  <link rel="shortcut icon" type="image/x-icon" href="samfavicon.png">
 
   <!--google fonts link-->
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
@@ -28,17 +32,17 @@
 <!--bootstrap links end-->
 
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-	<script>
-	  var config = {
-      		apiKey: "",
-      		authDomain: "",
-	    	databaseURL: "",
-	    	projectId: "",
-	    	storageBucket: "",
-	     	messagingSenderId: "",
-	  };
-	  firebase.initializeApp(config);
-	</script>
+  <script>
+    var config = {
+      apiKey: "AIzaSyBAYfrxbeyWPgIhTtzIaV2UkkEHaW4bbM8",
+      authDomain: "samsungfestivaloffer.firebaseapp.com",
+      databaseURL: "https://samsungfestivaloffer.firebaseio.com",
+      projectId: "samsungfestivaloffer",
+      storageBucket: "samsungfestivaloffer.appspot.com",
+       messagingSenderId: "188715028992",
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
   <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
@@ -54,21 +58,34 @@
               <div class="service">
                 <div class="text-center innertxt">
                    <div id="phone"></div>
-                   <h1>Thank you...!</h1>
-                   <h5>your coupon will be sent shortly</h5>
+
+                   <!--login image thankyou-->
+                   <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                          <a href="#"><img src="/images/5.jpg" class="imageland"></a>
+                          <a href="#"><img src="/images/6.jpg" class="imagelandmobile"></a>
+                        </div>
+
+                      </div>
+                  </div>
+                  <h3>Congratulations!</h3>
+                  <h5>You have successfully redeemed your Samsung Festive Offer. Your unique code for Times Prime Membership activation is Download Times Prime App from Play Store Open the App & Click on "Have a gift/ referral code" on first screen and enter the code</h5>
+                  <h5>Follow the below link to redeem your Times Prime Membership:</h5>
+                  <p><a href=#>https://www.timesprime.com/login?promo"<strong id="demo"></strong>"</a><p>
                 </div>
               </div>
         <!--samsung mobile images row start-->
 
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                  <a href="#"><img src="/images/1.jpg" class="imagesize"></a>
-                </div>
+                <!--<div class="col-lg-4 col-sm-12">
+                  <a href="#"><img src="samsung1.jpeg" class="imagesize"></a>
+                </div>-->
 
 
 
-                <div class="col-lg-8 col-sm-12 offerdata">
+                <div class="col-lg-12 col-sm-12 offerdata">
                   <div class="scrollbar">
                   <h3 style="text-align: center; margin-top: 10px;">Dussehra Festive Consumer Offer</h3>
                   <h5>Offer period</h5>
@@ -142,21 +159,20 @@ Participant needs to purchase and activate the new Product from the Outlet durin
           </div>
 
 
-  <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-sm-12">
-          <a href="#"><img src="/images/3.jpg" class="imageland"></a>
-          <a href="#"><img src="/images/4.jpg" class="imagelandmobile"></a>
-        </div>
 
-        </div>
-    </div>
           <div class="service">
             <div class="text-center innertxt">
               <div id="user-signed-out" class="hidden">
                 <div id="firebaseui-spa">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-12 col-sm-12">
+                        <a href="#"><img src="/images/3.jpg" class="imageland"></a>
+                        <a href="#"><img src="/images/4.jpg" class="imagelandmobile"></a>
+                      </div>
 
-                <h4 style="margin-top: 10px;">Welcome to Samsung Samtphones Festive Offer Redemption Page <br>Andhra Pradesh & Telangana</h4>
+                      </div>
+                  </div>
                 <h5 style="margin-top: 20px;">Please verify with your phone number</h5>
             </div>
           </div>
@@ -171,3 +187,4 @@ Participant needs to purchase and activate the new Product from the Outlet durin
 
 </body>
 </html>
+
