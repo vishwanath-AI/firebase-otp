@@ -47,6 +47,20 @@ firebase.auth().onAuthStateChanged(function(user) {
   user ? handleSignedInUser(user) : handleSignedOutUser();
 });
 
+firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
+.then(function() {
+  var provider = new firebase.auth.phoneAuthProvider();
+  // In memory persistence will be applied to the signed in Google user
+  // even though the persistence was set to 'none' and a page redirect
+  // occurred.
+  return firebase.auth().signInWithRedirect(provider);
+})
+.catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+});
+
 var initApp = function() {
   document.getElementById('sign-out').addEventListener('click', function() {
     firebase.auth().signOut();
