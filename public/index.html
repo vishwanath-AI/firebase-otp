@@ -20,7 +20,7 @@
 
   <!--google fonts link-->
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <!--bootstrap links start-->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -34,14 +34,17 @@
 	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
   <script>
     var config = {
-      apiKey: "",
-      authDomain: "",
-      databaseURL: "",
-      projectId: "",
-      storageBucket: "",
-       messagingSenderId: "",
+      apiKey: "AIzaSyBAYfrxbeyWPgIhTtzIaV2UkkEHaW4bbM8",
+      authDomain: "samsungfestivaloffer.firebaseapp.com",
+      databaseURL: "https://samsungfestivaloffer.firebaseio.com",
+      projectId: "samsungfestivaloffer",
+      storageBucket: "gs://samsungfestivaloffer.appspot.com",
+       messagingSenderId: "188715028992",
     };
     firebase.initializeApp(config);
+    var database = firebase.database();
+    var storage = firebase.storage();
+
   </script>
   <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
@@ -49,6 +52,7 @@
 
 </head>
 <body>
+  <a id='top'></a>
     <div id="container">
       <div id="loading">Loading...</div>
       <div id="loaded" class="hidden">
@@ -70,9 +74,13 @@
                       </div>
                   </div>
                   <h3>Congratulations!</h3>
-                  <h5>You have successfully redeemed your Samsung Festive Offer. Your unique code for Times Prime Membership activation is Download Times Prime App from Play Store Open the App & Click on "Have a gift/ referral code" on first screen and enter the code</h5>
-                  <h5>Follow the below link to redeem your Times Prime Membership:</h5>
-                  <p><a href=#>https://www.timesprime.com/login?promo"<strong id="demo"></strong>"</a><p>
+                  <h5>You have successfully redeemed your Samsung Festive Offer. Your unique code for <b>Times Prime Membership</b> activation is SMTPVVA70M Download Times Prime App from Play Store Open the App & Click on "Have a gift/ referral code" on first screen and enter the code</h5>
+                  <h3>or</h3>
+                  <h5>Follow the below link to redeem your Times Prime Membership:<b></b></h5>
+                    <h5><a href='#'>https://www.timesprime.com/login?promo=SMTPVVA70M</a></h5>
+
+
+                  <!--<p><a href=#>https://www.timesprime.com/login?promo"<strong id="demo"></strong>"</a><p>-->
                 </div>
               </div>
         <!--samsung mobile images row start-->
@@ -153,9 +161,9 @@ Participant needs to purchase and activate the new Product from the Outlet durin
 
               <div class="clearfix"></div>
             </div>
-            <p>
+            <!--<p>
               <button id="sign-out">Sign Out</button>
-            </p>
+            </p>-->
           </div>
 
 
@@ -173,7 +181,7 @@ Participant needs to purchase and activate the new Product from the Outlet durin
 
                       </div>
                   </div>
-                <h5 style="margin-top: 20px;">Please verify with your phone number</h5>
+                <!--<h5 style="margin-top: 20px;">Please verify with your phone number</h5>-->
             </div>
           </div>
               <div id="firebaseui-container"></div>
@@ -184,7 +192,6 @@ Participant needs to purchase and activate the new Product from the Outlet durin
       </div>
     </div>
     <script src="app.js"></script>
-
+    <script>
 </body>
 </html>
-
