@@ -10,13 +10,13 @@ function getUiConfig() {
     'signInFlow': 'popup',
     'signInOptions': [
 	
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          //firebase.auth.GoogleAuthProvider.PROVIDER_ID,
 	{
         provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
         recaptchaParameters: {
-          type: 'image', 
+          //type: 'image', 
           size: 'invisible',
-          badge: 'bottomleft' 
+          //badge: 'bottomleft' 
         },
 	      defaultCountry: 'IN', 
 	      defaultNationalNumber: '1234567890',
