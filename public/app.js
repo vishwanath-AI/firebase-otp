@@ -68,6 +68,7 @@ var initApp = function() {
 };
 
 window.addEventListener('load', initApp);
+window.addEventListener('load', initApp);
 
 /*generateing coupencode dynamically*/
 
